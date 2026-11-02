@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Enquiry | Moeng Farms — Fresh Produce and Meat</title>
+<link href="css/style.css" rel="stylesheet"/>
+<meta content="Moeng Farms — Enquiry. Fresh fruit, vegetables and meat supply with quotation requests in Limpopo, South Africa." name="description"/></head>
+<body>
+<header>
+<img alt="Moeng Farms logo" loading="lazy" src="images/logo.png"/>
+<div class="brand">
+    Moeng Farms
+   </div>
+</header>
+<nav>
+<ul>
+<li>
+<a class="" href="index.html">
+      Home
+     </a>
+</li>
+<li>
+<a class="" href="about.html">
+      About Us
+     </a>
+</li>
+<li>
+<a class="" href="services.html">
+      Services
+     </a>
+</li>
+<li>
+<a class="" href="gallery.html">
+      Gallery
+     </a>
+</li>
+<li>
+<a aria-current="page" class="active" href="enquiry.html">
+      Request a Quote
+     </a>
+</li>
+<li>
+<a class="" href="contact.html">
+      Contact
+     </a>
+</li>
+</ul>
+</nav>
+<main>
+ <section class="content">
+    <h1>
+     Request a Quote
+    </h1>
+    <p>
+     Complete the form below with your requirements. The form also includes a simple estimate calculator to help you plan your request.
+    </p>
+    <form id="quoteForm">
+     <div class="form-grid">
+      <div class="form-group">
+       <label for="name">
+        Full Name
+       </label>
+       <input id="name" required=""/>
+      </div>
+      <div class="form-group">
+       <label for="email">
+        Email
+       </label>
+       <input id="email" required="" type="email"/>
+      </div>
+      <div class="form-group">
+       <label for="phone">
+        Phone
+       </label>
+      <input id="phone" name="phone" pattern="(\+27|0)[0-9]{9}" placeholder="0821234567" required="" type="tel"/>
+      </div>
+      <div class="form-group">
+       <label for="product">
+        Product
+       </label>
+       <select id="product" required="">
+        <option value="">
+         Select a product
+        </option>
+        <option value="fruit">
+         Fresh Fruits
+        </option>
+        <option value="vegetables">
+         Vegetables
+        </option>
+        <option value="meat">
+         Quality Meat
+        </option>
+       </select>
+      </div>
+      <div class="form-group">
+       <label for="quantity">
+        Quantity
+       </label>
+       <input id="quantity" min="1" required="" type="number"/>
+      </div>
+      <div class="form-group">
+       <label for="unit">
+        Unit
+       </label>
+       <select id="unit">
+        <option value="kg">
+         kg
+        </option>
+        <option value="boxes">
+         boxes
+        </option>
+        <option value="units">
+         units
+        </option>
+       </select>
+      </div>
+      <div class="form-group full">
+       <label for="message">
+        Requirements
+       </label>
+       <textarea id="message" placeholder="Tell us about your order or delivery requirements."></textarea>
+      </div>
+     </div>
+     <div class="form-actions">
+      <button type="submit">
+       Submit Quote Request
+      </button>
+      <button onclick="calculateEstimate()" type="button">
+       Calculate Estimate
+      </button>
+     </div>
+    </form>
+    <div class="message" id="formMessage">
+    </div>
+    <div class="quote-result" id="quoteResult">
+    </div>
+   </section>
+<section class="content">
+<h2>
+     Frequently Asked Questions
+    </h2>
+<details>
+<summary>
+      What products does Moeng Farms supply?
+     </summary>
+<p>
+      Moeng Farms supplies fruits, vegetables and meat.
+     </p>
+</details>
+<details>
+<summary>
+      Who can request a quotation?
+     </summary>
+<p>
+      Customers from different sectors can use the request form to provide their requirements.
+     </p>
+</details>
+<details>
+<summary>
+      Why was the website developed?
+     </summary>
+<p>
+      The website improves accessibility, presents products clearly and makes company information and online enquiries easier to access.
+     </p>
+</details>
+</section>
+</main>
+
+<footer>
+<p>
+    © 2026 Moeng Farms. Handled With Love.
+   </p>
+</footer>
+<script src="js/products.js"></script><script defer="" src="js/part3.js"></script></body>
+</html>
